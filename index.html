@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fingerprint Modal</title>
+  </head>
+  <body>
+    <main>
+      <section class="accuracy">
+        <div class="accuracy-header">
+          <p class="why-fingerprint">
+            Why Fingerprint<span class="blinking-cursor">_</span>
+          </p>
+          <h1>
+            The internet's most
+            <br />
+            <span>accurate </span>
+            visitor identifier
+          </h1>
+          <p class="industry-leading">
+            <strong>Industry-leading accuracy </strong>that lasts for months
+            <br />
+            or years, even when cookies are cleared.
+          </p>
+          <a
+            href="https://fingerprint.com/products/fingerprint-pro/"
+            target="_blank"
+            aria-label="Learn more about Fingerprint's pro plans"
+            class="fingerprint-pro"
+            >Learn More</a
+          >
+        </div>
+        <div class="chart-container">
+          <canvas id="dynamicChart"></canvas>
+          <div id="tooltip" class="tooltip hidden"></div>
+          <div class="x-axis">
+            <span>0</span>
+            <span>30</span>
+            <span>60</span>
+            <span>90</span>
+            <span>120</span>
+          </div>
+        </div>
+        <div class="drop-days">
+          <span>Accuracy dropoff</span>
+          <span>days after initial identification</span>
+        </div>
+      </section>
+      <section class="device side">
+        <img
+          src="icons/search.png"
+          alt="Icon representing search functionality"
+          class="icon-img"
+        />
+        <div class="side-info">
+          <h3>Any browser, any device.</h3>
+          <p>
+            Identify returning web and mobile app visitors on all browsers, iOS,
+            and Android, with exceptional accuracy.
+          </p>
+        </div>
+      </section>
+      <section class="anonymous">
+        <div class="squares"></div>
+        <div class="anon-info side">
+          <img
+            src="icons/podcast.png"
+            alt="Symbol representing search and identification of users"
+            class="icon-img"
+          />
+          <div class="side-info">
+            <h3>Identify all anonymous visitors.</h3>
+            <p>
+              Get details on suspicious visitors even when VPN, incognito mode,
+              or a tampered browser or device is used.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="delight side">
+        <img
+          src="icons/discount.png"
+          alt="A magnifying glass symbolizing search and identification"
+          class="icon-img"
+        />
+        <div class="side-info">
+          <h3>Delight your trusted users.</h3>
+          <p>
+            Personalize user experience and reduce 2FA and OTP requirements by
+            identifying logged-out users.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
